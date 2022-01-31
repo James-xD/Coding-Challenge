@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Project1.Helpers"
+             x:Class="Project1.Login"
+             BackgroundColor="#0D1A34"
+             xmlns:Helpers="clr-namespace:Project1.Helpers;assembly=Project1">
+
+
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Image HeightRequest="200" WidthRequest="200" Source="{Helpers:ImageResource Project1.Assets.Images.logo.jpg}"></Image>
+
+            <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+
+                <Entry Placeholder="Username" FontSize="16" x:Name="EntryUserName" Grid.Row="0"/>
+                <Entry Placeholder="Password" IsPassword="true" FontSize="16" x:Name="EntryUserPassword" Grid.Row="1"/>
+                <Button Text="Login" Grid.Row="2" BackgroundColor="Transparent" TextColor="White" Clicked="Button_Clicked_2"/>
+                <Button Text="SignUp" Grid.Row="3" BackgroundColor="Transparent" TextColor="White" Clicked="Button_Clicked_1"/>
+               
+            </Grid>
+            
+      
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

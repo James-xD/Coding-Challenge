@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Project1.FinManagement"
+             BackgroundColor="#0D1A34">
+
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Financial Management HelpDesk" Grid.Row="0" TextColor="White" FontSize="Header"  HorizontalTextAlignment="Center" Margin="50" />
+           
+            <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="Please Enter Email or Phone Number to Reserve Ticket" Grid.Row="0" TextColor="White" FontSize="Medium"  HorizontalTextAlignment="Center" Margin="15" />
+                <Entry Placeholder="Email/PhoneNumber" Grid.Row="1" FontSize="16" x:Name="EntryTicketMail"/>
+                <Button Text="Reserve Ticket" Grid.Row="2" BackgroundColor="Transparent" TextColor="White" Clicked="Button_Clicked"/>
+                <Button Text="Back" Grid.Row="3" BackgroundColor="Transparent" TextColor="White" Clicked="Button_Clicked_1"/>
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
